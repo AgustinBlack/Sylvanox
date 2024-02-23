@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link__p{
+    color: black;
+    text-align: center;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.697);
+    border-radius: 5px;
+    padding: 5px;
+}

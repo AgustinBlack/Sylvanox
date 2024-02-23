@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Dragonlord';
+    src: url('../../assets/Dragonlord_PERSONAL_USE_ONLY.otf') format('truetype');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link__title{
+    font-family: 'Drangolord', sans-serif;
+    font-size: xxx-large;
+    color: white;
+    margin-top: 30px;
+}
