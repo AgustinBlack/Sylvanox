@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container__mallet{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 7px;
+}
+
+.cards__added{
+    width: 80px;
+}
+
+.container{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 7px;
+}
+
+.cards{
+    background-color: #3f2f26;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name{
+    text-decoration: underline;
+}
+
+.btn__card{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #ffffffad;
+}
