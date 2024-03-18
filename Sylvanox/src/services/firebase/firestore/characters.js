@@ -1,5 +1,6 @@
 import { db } from "../firebaseConfig";
-import { getDocs, collection, query, where, getDoc, doc } from "firebase/firestore";
+import { getDocs, collection, query, where, doc } from "firebase/firestore";
+import { getDownloadURL } from "firebase/storage";
 
 export const getCharacters = (typeId) =>{
     const charactersCollection = typeId
@@ -25,3 +26,29 @@ export const getCharacterById = (characterId) => {
             return characterAddapted
         })
 }
+
+export const uploadImageToStorage = async (file) => {
+    try {
+      const storageRef = ref(storage, `img/${file.name}`);
+      await uploadBytes(storageRef, file);
+      const downloadURL = await getDownloadURL(storageRef);
+      return downloadURL;
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      return null;
+    }
+};
+
+export const addCharacterWithImage = async (characterData, imageFile) => {
+    try {
+      const img = await uploadImageToStorage(imageFile);
+      if (img) {
+        await addDoc(collection(db, 'characters'), { ...characterData, img });
+        console.log('Personaje añadido con éxito');
+      } else {
+        console.error('Error al subir imagen');
+      }
+    } catch (error) {
+      console.error('Error adding character:', error);
+    }
+};

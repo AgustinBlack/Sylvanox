@@ -60,15 +60,11 @@ Link{
     font-size: 16px;
     cursor: pointer;
     z-index: 1;
-    background: var(--grey-brown);
+    background: var(--dark-brown);
     color: var(--white);
     border-radius: 50%;
     transform: translateY(-50%);
     transition: all 0.2s;
-}
-
-.container [type="checkbox"] + label:hover {
-    background: var(--dark-brown);
 }
 
 .menu li {
@@ -124,11 +120,6 @@ Link{
     font-weight: bold;
 }
 
-.container input:checked + label {
-    background: var(--grey-brown);
-    transform: translateY(calc(-50% + 4px));
-}
-  
 .container input:checked ~ .menu li:nth-child(1) {
     top: -135px;
     transition-delay: 0.1s;

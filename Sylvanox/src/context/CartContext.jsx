@@ -25,6 +25,7 @@ export const CartProvider = ({children}) => {
     const removeCard = (id) => {
         const cardUpdated = cardAdd.filter(prod => prod.id !== id)
         setCardAdd(cardUpdated);
+        console.log(cardUpdated)
     }
 
     return (

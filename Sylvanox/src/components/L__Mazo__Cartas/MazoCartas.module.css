@@ -1,17 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.container__mallet{
-    background-color: beige;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    gap: 7px;
-}
-
-.cards__added{
-    width: 80px;
+.title{
+    color: #fff;
 }
 
 .container{
@@ -34,10 +24,6 @@
     gap: 10px;
 }
 
-.name{
-    text-decoration: underline;
-}
-
 .btn__card{
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -46,4 +32,100 @@
     border-radius: 5px;
     padding: 3px;
     background-color: #ffffffad;
+    font-size: smaller;
+    text-align: center;
+}
+
+.img{
+    border-radius: 3px;
+    border: 2px solid #c4ab93;
+}
+
+.cards__added{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.container__mallet{
+    background-color: #3f2f26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.cards__mallet{
+    background-color: #c4ab93;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div__img__mallet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__mallet{
+    width: 80px;
+    border-radius: 3px;
+    border: 2px solid #3f2f26;
+    align-items: center;
+}
+
+.name__mallet{
+    color: white;
+}
+
+.btn__card__mallet{
+    color: #635a48;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #ffffffad;
+    font-size: smaller;
+    text-align: center;
+}
+
+.card__detail{
+    position: fixed;
+    margin: 20px;
+    background-color: #a18d78;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    box-shadow: 0px 0px 1000px 0px rgba(0, 0, 0, 1)
+}
+
+.stats{
+    font-size: small;
+    font-weight: 500;
+}
+
+.type{
+    font-size: medium;
+}
+
+.card__detail__btn{
+    background-color: #ffffffad;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    border-radius: 3px;
 }
